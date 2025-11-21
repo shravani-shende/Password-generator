@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="alignItem">Password Generator</h1>
+
+        <div class="passwordArea">
+            <input type="text" name="" id="">
+            <i class="fa-regular fa-copy" id="copyButton"></i>
+            <!-- <i class="fa-solid fa-check check"></i> -->
+        </div>
+
+        <div class="box">
+
+            <div class="feature">
+                <p>Password length</p>
+                <div>
+                    <input type="range" max="24" min="6" value="12" class="range" id="lenghtSilder">
+                    <span id="range">12</span>
+                </div>
+            </div>
+
+            <div class="feature">
+                <p>include Uppercase</p>
+                <input type="checkbox" checked id="uppercase">
+            </div>
+
+            <div class="feature">
+                <p>include Lowercase</p>
+                <input type="checkbox" checked id="lowercase">
+            </div>
+
+            <div class="feature">
+                <p>include Numbers</p>
+                <input type="checkbox" id="numbers">
+            </div>
+
+            <div class="feature">
+                <p>include Symbols</p>
+                <input type="checkbox" id="symbols">
+            </div>
+
+        </div>
+
+        <button class="btn"><i class="fa-solid fa-key"></i>Generate Password</button>
+
+        <div class="box2">
+            <div>
+                <p style="font-size: 15px;">Password Strength :</p>
+                <p style="font-weight: bold;" id="label">strong</p>
+            </div>
+            <div class="bar">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
